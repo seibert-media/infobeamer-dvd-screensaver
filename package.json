@@ -1,0 +1,20 @@
+{
+    "name": "DVD player screensaver",
+    "desc": "moves image diagonally across the screen",
+    "author": "git@kunsmann.eu",
+
+    "lifecycle": "production",
+    "nesting": {
+        "childs": [
+            "any"
+        ],
+        "parents": [
+            "top-level"
+        ]
+    },
+    "offline": {
+        "support": "yes",
+        "info": "once everything is loaded, package will work without network connection"
+    },
+    "platforms": ["pi/epoch-1", "pi/epoch-2"]
+}

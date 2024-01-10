@@ -1,0 +1,14 @@
+{
+    "name": "DVD player screensaver",
+    "permissions": {},
+    "options": [
+        {
+            "title": "Logo to show",
+            "ui_width": 12,
+            "name": "logo",
+            "type": "resource",
+            "valid": ["image"],
+            "default": "default.png"
+        }
+    ]
+}
