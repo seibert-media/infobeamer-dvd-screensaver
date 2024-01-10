@@ -38,11 +38,15 @@ function node.render()
 
     logo:draw(x, y, x+logo_w, y+logo_h)
 
-    if x + logo_w >= NATIVE_WIDTH or x <= 0 then
-        dir_x = dir_x * -1
+    if x + logo_w >= NATIVE_WIDTH then
+        dir_x = -1
+    elseif x <= 0 then
+        dir_x = 1
     end
-    if y + logo_h >= NATIVE_HEIGHT or y <= 0 then
-        dir_y = dir_y * -1
+    if y + logo_h >= NATIVE_HEIGHT then
+        dir_y = -1
+    elseif y <= 0 then
+        dir_y = 1
     end
 
     x = x + dir_x
